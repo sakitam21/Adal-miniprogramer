@@ -1,8 +1,8 @@
 {
-  "miniprogramRoot": "./dist",
+  "miniprogramRoot": "dist/",
   "projectname": "Adal-miniprogramer",
   "description": "Taro小程序",
-  "appid": "touristappid",
+  "appid": "wxfee5931904650431",
   "setting": {
     "urlCheck": true,
     "es6": false,
