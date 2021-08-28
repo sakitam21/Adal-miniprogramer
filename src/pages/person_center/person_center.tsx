@@ -16,9 +16,12 @@ export default class PersonCenter extends Component {
 
     componentDidHide() { }
 
-    render() {
+    render(): JSX.Element {
         return (
             <View className='person_center'>
+
+                <View className='gutter'></View>
+
                 <AtList>
                     <AtListItem
                         title='姜岁岁'
@@ -29,19 +32,26 @@ export default class PersonCenter extends Component {
                     </AtListItem>
                 </AtList>
 
+                <View className='gutter'></View>
+
                 <AtList>
                     <AtListItem
-                        title='姜岁岁'
+                        title='当前项目'
+                        arrow='right'
+                    >
+                    </AtListItem>
+                </AtList>
+
+                <View className='gutter'></View>
+
+                <AtList>
+                    <AtListItem
+                        title='意见反馈'
                         arrow='right'
                     >
                     </AtListItem>
                     <AtListItem
-                        title='姜岁岁'
-                        arrow='right'
-                    >
-                    </AtListItem>
-                    <AtListItem
-                        title='姜岁岁'
+                        title='关于'
                         arrow='right'
                     >
                     </AtListItem>
