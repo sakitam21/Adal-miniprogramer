@@ -1,9 +1,8 @@
 const config = {
   projectName: 'Adal-miniprogramer',
   date: '2021-8-27',
-  designWidth: 375,
+  designWidth: 750,
   deviceRatio: {
-    375: 2 / 1,
     640: 2.34 / 2,
     750: 1,
     828: 1.81 / 2
@@ -46,6 +45,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['taro-ui'],
     postcss: {
       autoprefixer: {
         enable: true,

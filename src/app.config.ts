@@ -1,7 +1,7 @@
 export default {
   pages: [
-    'pages/index/index',
-    'pages/person_center/person_center'
+    'pages/person_center/person_center',
+    'pages/index/index'
   ],
   window: {
     backgroundTextStyle: 'light',

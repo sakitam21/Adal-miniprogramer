@@ -1,24 +1,53 @@
 import { Component } from 'react'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
+import { AtList, AtListItem } from "taro-ui"
+import avatarImg from '../../static/images/person_center/avatar.jpeg'
 import './person_center.scss'
 
 export default class PersonCenter extends Component {
 
-  componentWillMount () { }
+    componentWillMount() { }
 
-  componentDidMount () { }
+    componentDidMount() { }
 
-  componentWillUnmount () { }
+    componentWillUnmount() { }
 
-  componentDidShow () { }
+    componentDidShow() { }
 
-  componentDidHide () { }
+    componentDidHide() { }
 
-  render () {
-    return (
-      <View className='person_center'>
-        <Text>个人中心</Text>
-      </View>
-    )
-  }
+    render() {
+        return (
+            <View className='person_center'>
+                <AtList>
+                    <AtListItem
+                        title='姜岁岁'
+                        note='描述信息'
+                        arrow='right'
+                        thumb={avatarImg}
+                    >
+                    </AtListItem>
+                </AtList>
+
+                <AtList>
+                    <AtListItem
+                        title='姜岁岁'
+                        arrow='right'
+                    >
+                    </AtListItem>
+                    <AtListItem
+                        title='姜岁岁'
+                        arrow='right'
+                    >
+                    </AtListItem>
+                    <AtListItem
+                        title='姜岁岁'
+                        arrow='right'
+                    >
+                    </AtListItem>
+                </AtList>
+
+            </View>
+        )
+    }
 }
