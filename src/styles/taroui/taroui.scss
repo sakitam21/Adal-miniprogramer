@@ -1,12 +1,47 @@
+@import "../common/variable.scss";
+
+// List列表
 .at-list {
-    border-top: 0.5px solid #e3e5ee;
-    border-bottom: 0.5px solid #e3e5ee;
+    border-top: 0.5px solid $border-color;
+    border-bottom: 0.5px solid $border-color;
     .at-list__item {
         padding: 24px 0;
         margin: 0 24px;
-        border-bottom: 0.5px solid #e3e5ee;
-        &:last-child{
+        border-bottom: 0.5px solid $border-color;
+        &:last-child {
             border: none;
+        }
+    }
+}
+
+// SearchBar
+.at-search-bar {
+    padding: 24px;
+    .at-search-bar__input-cnt {
+        height: 72px;
+        .at-search-bar__placeholder-wrap {
+            height: 72px;
+        }
+        .at-search-bar__input {
+            height: 72px !important;
+        }
+    }
+    .at-search-bar__action {
+        background-color: $theme-color;
+    }
+}
+
+// Tabs
+.at-tabs {
+    .at-tabs__header {
+        .at-tabs__item {
+            color: $color;
+        }
+        .at-tabs__item--active{
+            color: $theme-color;
+            .at-tabs__item-underline{
+                background-color: $theme-color;
+            }
         }
     }
 }

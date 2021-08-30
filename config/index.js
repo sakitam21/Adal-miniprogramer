@@ -1,3 +1,6 @@
+// eslint-disable-next-line import/no-commonjs
+const path = require('path');
+
 const config = {
   projectName: 'Adal-miniprogramer',
   date: '2021-8-27',
@@ -17,6 +20,12 @@ const config = {
     ],
     options: {
     }
+  },
+  sass: {
+    resource: [
+      path.resolve(__dirname, '..', 'src/styles/common/variable.scss'),
+      path.resolve(__dirname, '..', 'src/styles/common/mixins.scss')
+    ]
   },
   framework: 'react',
   mini: {
