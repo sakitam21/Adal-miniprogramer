@@ -1,17 +1,20 @@
 export default {
   pages: [
+    'pages/blog/blog',
+    'pages/index/index',
+    // 'pages/blog/blog',
+    'pages/project/project',
     'pages/person_center/person_center',
-    'pages/index/index'
   ],
   window: {
     backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black'
+    navigationBarBackgroundColor: '#00CED5',
+    navigationBarTitleText: '阿达尔',
+    navigationBarTextStyle: 'white'
   },
   tabBar: {
     color: '#cdcdcd',
-    selectedColor: '#169891',
+    selectedColor: '#00CED5',
     list: [
       {
         pagePath: 'pages/index/index',
@@ -20,8 +23,20 @@ export default {
         selectedIconPath: 'static/images/tabbar/home_selected.png'
       },
       {
+        pagePath: 'pages/blog/blog',
+        text: '博客',
+        iconPath: 'static/images/tabbar/blog.png',
+        selectedIconPath: 'static/images/tabbar/blog_selected.png'
+      },
+      {
+        pagePath: 'pages/project/project',
+        text: '项目',
+        iconPath: 'static/images/tabbar/project.png',
+        selectedIconPath: 'static/images/tabbar/project_selected.png'
+      },
+      {
         pagePath: 'pages/person_center/person_center',
-        text: '我的',
+        text: '个人中心',
         iconPath: 'static/images/tabbar/person_center.png',
         selectedIconPath: 'static/images/tabbar/person_center_selected.png'
       }

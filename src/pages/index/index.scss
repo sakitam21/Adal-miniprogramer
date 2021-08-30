@@ -1,0 +1,9 @@
+.index-page{
+    width: 100vw;
+    .guide-box{
+        margin: 24px;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid $theme-color;
+    }
+}

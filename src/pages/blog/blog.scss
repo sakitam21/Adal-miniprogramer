@@ -1,0 +1,36 @@
+.blog-page{
+    .guide-box{
+        margin: 24px;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid $theme-color;
+    }
+    .search-box{
+        position: relative;
+        height: 280px;
+        background-color: $theme-color;
+        .header{
+            height: 160px;
+            text-align: center;
+            color: #ffffff;
+            .title{
+                display: inline-block;
+                margin-top: 30px;
+                width: 100vw;
+                font-size: 48px;
+                font-weight: bolder;
+            }
+            .desc{
+                display: inline-block;
+                width: 100vw;
+                font-size: 24px;
+            }
+        }
+        .searchbar{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+        }
+    }
+}
