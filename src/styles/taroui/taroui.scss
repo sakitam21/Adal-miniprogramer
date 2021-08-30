@@ -1,0 +1,12 @@
+.at-list {
+    border-top: 0.5px solid #e3e5ee;
+    border-bottom: 0.5px solid #e3e5ee;
+    .at-list__item {
+        padding: 24px 0;
+        margin: 0 24px;
+        border-bottom: 0.5px solid #e3e5ee;
+        &:last-child{
+            border: none;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 export default {
   pages: [
-    'pages/index/index',
     'pages/blog/blog',
+    'pages/index/index',
+    // 'pages/blog/blog',
     'pages/project/project',
     'pages/person_center/person_center',
   ],
@@ -13,7 +14,7 @@ export default {
   },
   tabBar: {
     color: '#cdcdcd',
-    selectedColor: '#169891',
+    selectedColor: '#00CED5',
     list: [
       {
         pagePath: 'pages/index/index',
@@ -23,15 +24,15 @@ export default {
       },
       {
         pagePath: 'pages/blog/blog',
-        text: '博客管理',
-        iconPath: 'static/images/tabbar/home.png',
-        selectedIconPath: 'static/images/tabbar/home_selected.png'
+        text: '博客',
+        iconPath: 'static/images/tabbar/blog.png',
+        selectedIconPath: 'static/images/tabbar/blog_selected.png'
       },
       {
         pagePath: 'pages/project/project',
-        text: '项目管理',
-        iconPath: 'static/images/tabbar/home.png',
-        selectedIconPath: 'static/images/tabbar/home_selected.png'
+        text: '项目',
+        iconPath: 'static/images/tabbar/project.png',
+        selectedIconPath: 'static/images/tabbar/project_selected.png'
       },
       {
         pagePath: 'pages/person_center/person_center',

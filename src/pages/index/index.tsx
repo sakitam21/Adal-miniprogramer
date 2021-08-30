@@ -5,21 +5,10 @@ import './index.scss'
 
 export default class Index extends Component {
 
-  componentWillMount() { }
-
-  componentDidMount() { }
-
-  componentWillUnmount() { }
-
-  componentDidShow() { }
-
-  componentDidHide() { }
-
   render(): JSX.Element {
     return (
       <View className='index'>
-        <NavBar></NavBar>
-        {/* <Text>Hello world!</Text> */}
+        <NavBar navbarTitle='首页'></NavBar>
       </View>
     )
   }

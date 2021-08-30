@@ -2,14 +2,17 @@ import { Component } from 'react'
 import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
 
+interface IProps {
+    navbarTitle: string
+}
+
 interface IState {
     statusBarHeight: number
     navbarHeight: number
 }
 
-export default class NavBar extends Component<{}, IState> {
-
-    constructor(props) {
+export default class NavBar extends Component<IProps, IState> {
+    constructor(props: IProps) {
         super(props)
         this.state = {
             statusBarHeight: 0,
@@ -37,22 +40,36 @@ export default class NavBar extends Component<{}, IState> {
 
     render(): JSX.Element {
         const { statusBarHeight, navbarHeight } = this.state
+        const { navbarTitle } = this.props
         return (
-            <View
-                style={{
-                    position: 'fixed',
-                    // top: statusBarHeight + 'px',
-                    top: 0,
-                    left: 0,
-                    paddingTop: statusBarHeight + 'px',
-                    height: navbarHeight + 'px',
-                    lineHeight: navbarHeight + 'px',
-                    textAlign: 'center',
-                    width: '100vw',
-                    backgroundColor: '#00CED5',
-                    color: '#FFFFFF'
-                }}>
-                首页
+            <View className='navbar'>
+                <View
+                    style={{
+                        position: 'fixed',
+                        // top: statusBarHeight + 'px',
+                        top: 0,
+                        left: 0,
+                        paddingTop: statusBarHeight + 'px',
+                        height: navbarHeight + 'px',
+                        lineHeight: navbarHeight + 'px',
+                        textAlign: 'center',
+                        width: '100vw',
+                        backgroundColor: '#00CED5',
+                        color: '#FFFFFF',
+                        zIndex: 1000,
+                    }}>
+                    {navbarTitle}
+                </View>
+                <View
+                    style={{
+                        position: 'relative',
+                        height: statusBarHeight + navbarHeight + 'px',
+                        width: '100vw',
+                        backgroundColor: '#00CED5'
+                    }}
+                >
+
+                </View>
             </View>
         )
     }
