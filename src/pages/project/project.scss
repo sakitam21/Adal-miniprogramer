@@ -1,0 +1,30 @@
+.project-page {
+    .header{
+        height: 160px;
+        text-align: center;
+        color: #ffffff;
+        background-color: $theme-color;
+        .title{
+            display: inline-block;
+            margin-top: 30px;
+            width: 100vw;
+            font-size: 48px;
+            font-weight: bolder;
+        }
+        .desc{
+            display: inline-block;
+            width: 100vw;
+            font-size: 24px;
+        }
+    }
+    .project-list{
+        .project-item{
+            margin: 24px;
+            padding: 24px;
+            border: 1px solid $border-color;
+            border-radius: 8px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+    }
+}

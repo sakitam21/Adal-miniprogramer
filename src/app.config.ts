@@ -1,9 +1,9 @@
 export default {
   pages: [
-    'pages/blog/blog',
-    'pages/index/index',
-    // 'pages/blog/blog',
     'pages/project/project',
+    'pages/index/index',
+    'pages/blog/blog',
+    // 'pages/project/project',
     'pages/person_center/person_center',
   ],
   window: {

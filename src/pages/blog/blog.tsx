@@ -77,12 +77,12 @@ export default class Blog extends Component<{}, IState> {
             <View className='blog-page'>
                 <NavBar navbarTitle='博客'></NavBar>
                 <View className='guide-box' style={{display:'none'}}>
-                    <Text>博客页的功能描述：1.可以搜索 2.分类查看博客(参考《CSDN》小程序) 3.博客详情页可以关注博主、评论博客、分享博客、收藏博客、点赞博客</Text>
+                    <Text>博客页的功能描述(博客主要是写算法解法)：1.可以搜索 2.分类查看博客(参考《CSDN》小程序) 3.博客详情页可以关注博主、评论博客、分享博客、收藏博客、点赞博客</Text>
                 </View>
                 <View className='search-box'>
                     <View className='header'>
                         <Text className='title'>Adal Miniprogramer</Text>
-                        <Text className='desc'>用于学习管理的小程序</Text>
+                        <Text className='desc'>用于学习管理的小程序（leetcode）</Text>
                     </View>
                     <View className='searchbar'>
                         <AtSearchBar
