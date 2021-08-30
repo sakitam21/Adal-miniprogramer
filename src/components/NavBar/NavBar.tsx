@@ -19,14 +19,12 @@ export default class NavBar extends Component<{}, IState> {
 
     componentDidMount() {
         // 获取状态栏高度
-        const { statusBarHeight, pixelRatio } = Taro.getSystemInfoSync()
+        const { statusBarHeight } = Taro.getSystemInfoSync()
         console.log(Taro.getSystemInfoSync())
         //获取右上角菜单的尺寸位置
         const menuButton = Taro.getMenuButtonBoundingClientRect()
         console.log(Taro.getMenuButtonBoundingClientRect())
         const { top, height } = menuButton;
-
-
         const navbarHeight = (top - statusBarHeight) * 2 + height
         // 导航栏高度
         console.log(navbarHeight);
@@ -43,9 +41,13 @@ export default class NavBar extends Component<{}, IState> {
             <View
                 style={{
                     position: 'fixed',
-                    top: statusBarHeight + 'px',
+                    // top: statusBarHeight + 'px',
+                    top: 0,
                     left: 0,
+                    paddingTop: statusBarHeight + 'px',
                     height: navbarHeight + 'px',
+                    lineHeight: navbarHeight + 'px',
+                    textAlign: 'center',
                     width: '100vw',
                     backgroundColor: '#00CED5',
                     color: '#FFFFFF'

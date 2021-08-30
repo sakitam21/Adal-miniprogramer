@@ -9,7 +9,7 @@ export default {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#00CED5',
     navigationBarTitleText: '阿达尔',
-    navigationBarTextStyle: 'black'
+    navigationBarTextStyle: 'white'
   },
   tabBar: {
     color: '#cdcdcd',
