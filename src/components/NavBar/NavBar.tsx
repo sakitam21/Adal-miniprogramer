@@ -1,9 +1,11 @@
 import { Component } from 'react'
 import Taro from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
+import { AtIcon } from 'taro-ui'
 
 interface IProps {
     navbarTitle: string
+    arrow?: boolean
 }
 
 interface IState {
@@ -27,7 +29,7 @@ export default class NavBar extends Component<IProps, IState> {
         //获取右上角菜单的尺寸位置
         const menuButton = Taro.getMenuButtonBoundingClientRect()
         const { top, height } = menuButton;
-        
+
         const navbarHeight = (top - statusBarHeight) * 2 + height
 
         this.setState({
@@ -39,7 +41,7 @@ export default class NavBar extends Component<IProps, IState> {
 
     render(): JSX.Element {
         const { statusBarHeight, navbarHeight } = this.state
-        const { navbarTitle } = this.props
+        const { navbarTitle, arrow } = this.props
         return (
             <View className='navbar'>
                 <View
@@ -56,8 +58,21 @@ export default class NavBar extends Component<IProps, IState> {
                         color: '#FFFFFF',
                         zIndex: 1000,
                     }}>
-                    {navbarTitle}
+                    <Text>{navbarTitle}</Text>
+                    {arrow && (
+                        <View
+                            style={{
+                                position: 'absolute',
+                                top: statusBarHeight + (navbarHeight - 40) / 2 + 'px',
+                                left: '12px',
+                            }}
+                            onClick={() => { Taro.navigateBack() }}
+                        >
+                            <AtIcon value='chevron-left' size='30' color='#FFFFFF'></AtIcon>
+                        </View>
+                    )}
                 </View>
+
                 <View
                     style={{
                         position: 'relative',

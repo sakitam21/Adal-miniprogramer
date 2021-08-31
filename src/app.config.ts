@@ -5,6 +5,7 @@ export default {
     'pages/blog/blog',
     // 'pages/project/project',
     'pages/person_center/person_center',
+    'pages/project_detail/project_detail',
   ],
   window: {
     backgroundTextStyle: 'light',

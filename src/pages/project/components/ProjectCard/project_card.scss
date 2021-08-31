@@ -1,0 +1,90 @@
+.project-card {
+    margin: 24px;
+    padding: 24px;
+    // height: 240px;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .side {
+        position: relative;
+        width: 60px;
+        height: 154px;
+        float: left;
+        text-align: center;
+        .id-num {
+            position: absolute;
+            top: 16px;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background-color: $theme-color;
+            border-radius: 8px;
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+        }
+        .progress-num {
+            position: absolute;
+            top: 76px;
+            left: 0;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 24px;
+            color: $theme-color;
+            text-align: left;
+        }
+    }
+    .body {
+        display: inline-block;
+        width: calc(100% - 60px);
+        overflow: hidden;
+        .content {
+            .name {
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                font-weight: bolder;
+                color: #333;
+            }
+            .desc {
+                width: 100%;
+                max-height: 76px;
+                line-height: 38px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                font-size: 28px;
+                color: $color;
+            }
+        }
+        .footer {
+            position: relative;
+            height: 56px;
+            .frame,
+            .author {
+                padding: 0 12px;
+                height: 56px;
+                text-align: left;
+                line-height: 56px;
+                font-size: 28px;
+                color: $color;
+                float: left;
+            }
+            .date {
+                position: absolute;
+                top: 0;
+                right: 12px;
+                height: 56px;
+                font-size: 28px;
+                text-align: right;
+                color: $color;
+                line-height: 56px;
+            }
+        }
+    }
+}
